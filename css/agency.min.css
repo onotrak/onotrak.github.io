@@ -166,11 +166,18 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: #fff;
-  background-image: url(../img/footer.jpg);
+  background-image: url(../img/banner.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+}
+.text-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+  border-radius: 10px;
+  padding: 20px;
+  display: inline-block;
+  margin: 10px; /* Optional: adds space around the overlay */
 }
 header.masthead .intro-text {
   padding-top: 150px;
