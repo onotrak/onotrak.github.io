@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,57 +12,69 @@
          background-color: #f8f9fa;
          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
+
       header {
          background: #212529;
          color: white;
          padding: 15px 20px;
          display: flex;
          align-items: center;
-         justify-content: space-between;
+         /* justify-content: space-between; */
          position: sticky;
          top: 0;
          z-index: 1000;
       }
+
       header h1 {
-         font-size: 1.3rem;
+         font-size: 1.5rem;
          margin: 0;
       }
+
       .btn-back {
          background: white;
          color: #212529;
          border: none;
          font-weight: 500;
-         padding: 6px 15px;
+         padding: 6px 12px;
+         margin-right: 12px;
          transition: 0.3s;
          text-decoration: none;
          font-size: 0.8rem;
       }
+
       .btn-back:hover {
          background: #fec810;
          color: white;
       }
+
       .project-card {
          transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
+
       .project-card:hover {
          transform: translateY(-5px);
-         box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
       }
+
       .card-title {
          font-size: 1.1rem;
          font-weight: 600;
       }
+
       .card-text {
          font-size: 0.95rem;
       }
    </style>
 </head>
+
 <body>
 
    <!-- Header -->
    <header>
-      <h1>All Projects - Portfolio</h1>
-      <a href="index.html#projects" class="btn btn-back">⬅ Back</a>
+      <a href="index.html#projects" class="btn btn-back">
+         <i class="fas fa-chevron-left"></i>
+      </a>
+      <h1>Portfolio</h1>
    </header>
 
    <!-- Project List -->
@@ -74,48 +87,244 @@
    <script>
       const projects = [
          {
-            img: "img/btpn.jpg",
-            title: "JAAP - Jenius Lite",
-            desc: "Aplikasi internal yang digunakan oleh senior di Bank BTPN.",
-            stack: "React Native, TypeScript, GraphQL",
-            date: "2023",
+            "img": "",
+            "date": "Nov 2018 - Des 2018",
+            "role": "Mobile Developer",
+            "employer": "PT. Marlin Wisata Putra Nusa",
+            "title": "Batam News",
+            "desc": "Online Newspaper",
+            "stack": "React Native",
+            "link": ""
          },
          {
-            img: "img/autotrust.png",
-            title: "Auto Trust",
-            desc: "Aplikasi mobile untuk salesman Toyota Trust dalam membantu daily activity.",
-            stack: "React Native, Sentry",
-            date: "2021-2023",
+            "img": "img/marlin2.png",
+            "date": "Des 2018 - Des 2019",
+            "role": "Mobile Developer",
+            "employer": "PT. Marlin Wisata Putra Nusa",
+            "title": "Marlin Booking",
+            "desc": "Booking Ticket Online",
+            "stack": "Firebase, OTP, Facebook Auth, Google Auth, React Native",
+            "link": ""
          },
          {
-            img: "img/toyota-trust.png",
-            title: "Website Toyota Trust",
-            desc: "Website untuk jual beli mobil Toyota Trust.",
-            stack: "React.js, Next.js",
-            date: "2022",
+            "img": "",
+            "date": "Mei 2019 - Jul 2019",
+            "role": "Mobile Developer",
+            "employer": "PT. Marlin Wisata Putra Nusa",
+            "title": "Sindo Ferry",
+            "desc": "Online Ticket Booking Ferry",
+            "stack": "React Native",
+            "link": ""
          },
          {
-            img: "img/rsk.png",
-            title: "Rumah Siap Kerja",
-            desc: "Aplikasi untuk membeli kursus online.",
-            stack: "React Native, Firebase",
-            date: "2022",
+            "img": "",
+            "date": "Jul 2019 - Agu 2019",
+            "role": "Mobile Developer",
+            "employer": "PT. Marlin Wisata Putra Nusa",
+            "title": "Anchorage App",
+            "desc": "E-Ticketing Scan barcode for online ticket",
+            "stack": "React Native",
+            "link": ""
          },
          {
-            img: "img/meele.png",
-            title: "Meeple",
-            desc: "Aplikasi booking ruangan berbasis face recognition & koordinat lokasi.",
-            stack: "React Native, Firebase, Google Vision",
-            date: "2021",
+            "img": "",
+            "date": "Agu 2019 - Nov 2019",
+            "role": "Mobile Developer",
+            "employer": "PT. Marlin Wisata Putra Nusa",
+            "title": "Anchorage Plus",
+            "desc": "E-ticketing Scan barcode on harbor",
+            "stack": "React Native",
+            "link": ""
          },
          {
-            img: "img/cititrans.png",
-            title: "Cititrans",
-            role: "Mobile Developer",
-            desc: "Aplikasi booking tiket travel dengan integrasi pembayaran online dan real-time seat availability.",
-            stack: "React Native, Firebase",
-            date: "2019-2020",
-            link: "https://www.cititrans.co.id/"
+            "img": "",
+            "date": "Nov 2019 - Feb 2020",
+            "role": "Mobile Developer",
+            "employer": "PT. Marlin Wisata Putra Nusa",
+            "title": "Wandersea",
+            "desc": "Booking Ticket Online Revamp From Marlin Booking App",
+            "stack": "React Native",
+            "link": ""
+         },
+         {
+            "img": "img/cititrans.png",
+            "date": "Okt 2019 - Mei 2020",
+            "role": "Mobile Developer",
+            "employer": "PT Gamatechno Indonesia",
+            "title": "Cititrans",
+            "desc": "Aplikasi untuk booking tiket travel",
+            "stack": "Firebase, React Native",
+            "link": ""
+         },
+         {
+            "img": "img/eidara.jpeg",
+            "date": "Mei 2020 - Des 2020",
+            "role": "Front-End Developer",
+            "employer": "PT. Eidara Matadata Presisi",
+            "title": "Eidara App",
+            "desc": "Membuat Aplikasi berbasis mobile yang digunakan untuk pemetaan lokasi",
+            "stack": "React Native, React Js, Next Js",
+            "link": ""
+         },
+         {
+            "img": "",
+            "date": "Mei 2020 - Jul 2020",
+            "role": "Front-End Developer",
+            "employer": "PT. Erloom Digital Ventura",
+            "title": "Helofit",
+            "desc": "Aplikasi untuk konsultasi kesehatan dengan dokter",
+            "stack": "MobX, Firebase, Axios, TypeScript, React Native, React Js",
+            "link": ""
+         },
+         {
+            "img": "",
+            "date": "Jul 2020 - Mei 2023",
+            "role": "Mobile Developer",
+            "employer": "PT. Erloom Digital Ventura",
+            "title": "Digital Appraisal",
+            "desc": "Aplikasi untuk membantu appraiser di toyota trust untuk meng inspeksi mobil yang ada di lapangan",
+            "stack": "Sentry, React Native",
+            "link": ""
+         },
+         {
+            "img": "img/fdc.png",
+            "date": "Des 2020 - Mei 2021",
+            "role": "Mobile Developer",
+            "employer": "PT. Teknologi Media Medika",
+            "title": "FDC Dental Clinic & DUI (Dental Universe Indonesia)",
+            "desc": "Aplikasi untuk reservasi klinik gigi",
+            "stack": "Firebase, React Native",
+            "link": "https://play.google.com/store/apps/details?id=id.co.fdcdentalclinic"
+         },
+         {
+            "img": "",
+            "date": "Sep 2020 - Mei 2023",
+            "role": "Mobile Developer",
+            "employer": "PT. Code Inovasi Teknologi",
+            "title": "Digital Approval",
+            "desc": "Aplikasi yang digunakan oleh kepala cabang direksi dan beberapa atasan di Toyota Trust membantu perhitungan dan kalkulasi",
+            "stack": "Sentry, React Native",
+            "link": ""
+         },
+         {
+            "img": "",
+            "date": "Des 2020 - Mei 2023",
+            "role": "Mobile Developer",
+            "employer": "PT. Code Inovasi Teknologi",
+            "title": "Auto Trust",
+            "desc": "Aplikasi yang digunakan salesman di Toyota Trust untuk membantu daily activity",
+            "stack": "Sentry, React Native",
+            "link": ""
+         },
+         {
+            "img": "",
+            "date": "Jun 2021 - Agu 2021",
+            "role": "Mobile Developer",
+            "employer": "PT. Code Inovasi Teknologi",
+            "title": "Meeple",
+            "desc": "Aplikasi yang digunakan untuk meminjam dan menggunakan ruangan di gedung Asaba yang dilengkapi dengan Face recognition dan lokasi ruangan berbasis koordinat",
+            "stack": "Google Vision, Firebase, Google Auth, Facebook Auth, Linkedin Auth, Sentry, React Native",
+            // "link": "https://play.google.com/store/apps/details?id=com.asabavms"
+         },
+         {
+            "img": "",
+            "date": "Mar 2022 - Jun 2022",
+            "role": "Mobile Developer",
+            "employer": "PT. Skyshi Digital Indonesia",
+            "title": "VCGamers",
+            "desc": "Aplikasi untuk membeli item & equipment game",
+            "stack": "Typescript, React Native",
+            "link": "https://play.google.com/store/apps/details?id=com.vcgamers.apps"
+         },
+         {
+            "img": "",
+            "date": "Mar 2022 - Des 2022",
+            "role": "Mobile Developer",
+            "employer": "PT. Code Inovasi Teknologi",
+            "title": "Rumah Siap Kerja",
+            "desc": "Aplikasi untuk membeli kursus online",
+            "stack": "Firebase, Sentry, React Native",
+            "link": "https://play.google.com/store/apps/details?id=com.rumahsiapkerja"
+         },
+         {
+            "img": "img/toyota-trust.png",
+            "date": "Des 2022 - Mei 2023",
+            "role": "Front-End Developer",
+            "employer": "PT. Code Inovasi Teknologi",
+            "title": "Website Toyota Trust",
+            "desc": "Website yang digunakan untuk jual beli mobil di Toyota Trust",
+            "stack": "Sentry, React Js, Next Js",
+            "link": "https://toyotatrust.astra.co.id/"
+         },
+         {
+            "img": "",
+            "date": "Jan 2023 - Feb 2023",
+            "role": "Mobile Developer",
+            "employer": "PT. Code Inovasi Teknologi",
+            "title": "Caris",
+            "desc": "Aplikasi Pendapatan Komposer dan Penulis",
+            "stack": "React Native",
+            // "link": "https://play.google.com/store/apps/details?id=com.caris"
+         },
+         {
+            "img": "",
+            "date": "Mei 2023 - Nov 2023",
+            "role": "Mobile Developer",
+            "employer": "PT. Codemasters Nusantara Innovation",
+            "title": "Bootcamp React Native",
+            "desc": "Membuat materi dan mengajarkan ke peserta bootcamp terkait React Native dan React Js",
+            "stack": "React Native, Javascript, GIT",
+            "link": ""
+         },
+         {
+            "img": "img/jenius.png",
+            "date": "Jul 2023 - Jan 2024",
+            "role": "Mobile Developer",
+            "employer": "PT Bank BTPN Tbk",
+            "title": "JAAP - Jenius Lite App",
+            "desc": "Aplikasi yang digunakan oleh senior di bank BTPN",
+            "stack": "React Native, Typescript, Modular, Redux, Apollo Client - GraphQL",
+            "link": "https://play.google.com/store/apps/details?id=com.btpn.rlb"
+         },
+         {
+            "img": "",
+            "date": "Apr 2024 - Sep 2025",
+            "role": "Front-End Developer",
+            "employer": "PT. Code Inovasi Teknologi",
+            "title": "CSI (PT Catur Sukses Internasional)",
+            "desc": "Aplikasi perusahaan distributor membuat Aplikasi Marketplace, Aplikasi Distributor & Admin Panel",
+            "stack": "React Native, React Js",
+            "link": "https://play.google.com/store/apps/details?id=com.csi.csiapp"
+         },
+         {
+            "img": "img/msl.png",
+            "date": "Apr 2024 - Agu 2024",
+            "role": "Front-End Developer",
+            "employer": "PT. Code Inovasi Teknologi",
+            "title": "MSL (PT Mitra Solusi Lelang)",
+            "desc": "Website untuk lelang, develop Website Admin Panel & Website Konduktor",
+            "stack": "React Js, Tailwind CSS",
+            "link": "https://mslelang.co.id/"
+         },
+         {
+            "img": "",
+            "date": "Apr 2024 - Sep 2025",
+            "role": "Front-End Developer",
+            "employer": "PT. Code Inovasi Teknologi",
+            "title": "TOMAZZ (PT TOMAZZ Indonesia)",
+            "desc": "Website Admin Panel",
+            "stack": "React Js, Tailwind CSS, Vite",
+            "link": "https://tomazz.co.id/"
+         },
+         {
+            "img": "img/CareMate+.png",
+            "date": "Jul 2025 - Okt 2025",
+            "role": "Full-Stack Engineer",
+            "employer": "UNJAYA",
+            "title": "CareMate⁺",
+            "desc": "Aplikasi Pendamping Intervensi Berbasis Pasangan untuk HIV Serodiskordan Untuk kebutuhan Riset Di UNJAYA",
+            "stack": "React Native, React Js, Tailwind CSS, Vite, Supabase, Vercel, Firebase, SMTP Gmail",
+            "link": "https://play.google.com/store/apps/details?id=com.caremateplus"
          },
       ];
 
@@ -125,15 +334,16 @@
          <div class="col-md-4 col-sm-6">
             <div class="card project-card h-100 shadow-sm">
                <img 
-                  src="${p.img}" alt="${p.title}" 
+                  src="${p.img || 'img/default-project.png'}" alt="${p.title}" 
                   class="card-img-top" 
                   style="height:160px;object-fit:contain;padding:10px;background:#fff"
                >
                <div class="card-body d-flex flex-column">
                   <h5 class="card-title">${p.title}</h5>
                   <p class="card-text mb-1 mt-2"><i class="far fa-calendar-alt"></i> ${p.date}</p>
-                  <p class="text-primary small mb-1"><i class="fas fa-code"></i> ${p.role || "Frontend Developer"}</p>
-                  <p class="card-text"><i class="fas fa-tools"></i> ${p.stack}</p>
+                  <p class="text-primary small mb-1"><i class="fas fa-code"></i> ${p.role}</p>
+                  <p class="card-text mb-1"><i class="fas fa-tools"></i> ${p.stack}</p>
+                  <p class="card-text"><i class="fas fa-building"></i> ${p.employer || ''}</p>
                   <p class="text-muted small flex-grow-1">${p.desc}</p>
                   ${p.link ? `<a href="${p.link}" target="_blank" class="btn btn-outline-primary btn-sm mt-2">🔗 View Project</a>` : ""}
                </div>
@@ -144,4 +354,5 @@
 
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
