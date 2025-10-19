@@ -8,7 +8,7 @@
   <meta name="author" content="">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="img/onotrak/onotrak_logo_short_crop_nobg.png">
+  <link rel="icon" type="image/png" href="assets/img/onotrak/onotrak_logo_short_crop_nobg.png">
 
   <!-- Primary Meta Tags -->
   <title>ONOTRAK</title>
@@ -113,7 +113,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <img src="img/onotrak/onotrak_formal.png"
+          <img src="assets/img/onotrak/onotrak_formal.png"
             style="width: 200px; height: 200px; margin-bottom: 10px; border-radius: 100%;" />
           <h2 class="mb-4">About Me</h2>
           <p class="50">
@@ -122,6 +122,10 @@
             as well as React.js and Next.js for developing websites. I am highly motivated to continuously develop my
             skills and grow professionally.
             I am confident in my ability to contribute to innovative development systems.
+          </p>
+          <p class="50">
+            In addition, I am capable of developing complete systems from the ground up or building new features and
+            modules within existing platforms together with my team.
           </p>
         </div>
       </div>
@@ -133,11 +137,15 @@
     <div class="container">
       <div class="text-center">
         <h2 class="section-heading text-uppercase">Work History</h2>
+        <a href="assets/file/CV_PandyKartono.pdf" target="_blank" class="btn btn-primary btn-sm">
+          <i class="fas fa-file-pdf me-2"></i> Download CV
+        </a>
         <h3 class="section-subheading text-muted"></h3>
       </div>
       <ul class="timeline" id="work-timeline"></ul>
     </div>
   </section>
+
 
   <!-- Projects -->
   <section class="page-section" id="projects">
@@ -230,15 +238,15 @@
   <script>
     // Work History
     const workHistory = [
-      { company: "Kode Inovasi Teknologi", role: "Front-End Engineer", date: "Apr 2024 - Sep 2025", img: "img/projects/codr.jpeg" },
-      { company: "PT Bank BTPN Tbk", role: "React Native Developer", date: "Jul 2023 - Jan 2024", img: "img/projects/btpn.jpg" },
-      { company: "Codemasters", role: "Mentor / Trainer / Bootcamp Instructor", date: "May 2023 - Nov 2023", img: "img/projects/codemasters.png" },
-      { company: "Kode Inovasi Teknologi", role: "Front-End Engineer", date: "Jan 2022 - May 2023", img: "img/projects/codr.jpeg" },
-      { company: "Erloom Digital Venture", role: "Front-End Developer", date: "Feb 2021 - May 2023", img: "img/projects/erloom.jpeg" },
-      { company: "Eidara Matadata Presisi", role: "Front-End Engineer", date: "May 2020 - Aug 2021", img: "img/projects/eidara.jpeg" },
-      { company: "Marlin Booking", role: "Frelance Mobile Developer", date: "Jun 2020 - Dec 2020", img: "img/projects/marlin.jpg" },
-      { company: "Erloom Digital Venture", role: "Frelance Mobile Developer", date: "May 2020 - Sep 2020", img: "img/projects/erloom.jpeg" },
-      { company: "Marlin Booking", role: "Mobile Engineer", date: "Nov 2018 - Apr 2020", img: "img/projects/marlin.jpg" },
+      { company: "Kode Inovasi Teknologi", role: "Front-End Engineer", date: "Apr 2024 - Sep 2025", img: "assets/img/projects/codr.jpeg" },
+      { company: "PT Bank BTPN Tbk", role: "React Native Developer", date: "Jul 2023 - Jan 2024", img: "assets/img/projects/btpn.jpg" },
+      { company: "Codemasters", role: "Mentor / Trainer / Bootcamp Instructor", date: "May 2023 - Nov 2023", img: "assets/img/projects/codemasters.png" },
+      { company: "Kode Inovasi Teknologi", role: "Front-End Engineer", date: "Jan 2022 - May 2023", img: "assets/img/projects/codr.jpeg" },
+      { company: "Erloom Digital Venture", role: "Front-End Developer", date: "Feb 2021 - May 2023", img: "assets/img/projects/erloom.jpeg" },
+      { company: "Eidara Matadata Presisi", role: "Front-End Engineer", date: "May 2020 - Aug 2021", img: "assets/img/projects/eidara.jpeg" },
+      { company: "Marlin Booking", role: "Frelance Mobile Developer", date: "Jun 2020 - Dec 2020", img: "assets/img/projects/marlin.jpg" },
+      { company: "Erloom Digital Venture", role: "Frelance Mobile Developer", date: "May 2020 - Sep 2020", img: "assets/img/projects/erloom.jpeg" },
+      { company: "Marlin Booking", role: "Mobile Engineer", date: "Nov 2018 - Apr 2020", img: "assets/img/projects/marlin.jpg" },
     ];
 
     const workContainer = document.getElementById("work-timeline");
@@ -262,31 +270,31 @@
     // Projects
     const projects = [
       {
-        title: "Jenius Daya", img: "img/projects/jenius-btpn.jpg", desc: "(Android & iOS)",
+        title: "Jenius Daya", img: "assets/img/projects/jenius-btpn.jpg", desc: "(Android & iOS)",
       },
       {
-        title: "Cititrans", img: "img/projects/cititrans.png", desc: "(Android & iOS)", linkShow: "www.cititrans.co.id", link: "https://www.cititrans.co.id/",
+        title: "Cititrans", img: "assets/img/projects/cititrans.png", desc: "(Android & iOS)", linkShow: "www.cititrans.co.id", link: "https://www.cititrans.co.id/",
       },
       {
-        title: "Toyota Trust", img: "img/projects/toyota-trust.png", link: "https://toyotatrust.astra.co.id/", linkShow: "www.toyotatrust.astra.co.id",
+        title: "Toyota Trust", img: "assets/img/projects/toyota-trust.png", link: "https://toyotatrust.astra.co.id/", linkShow: "www.toyotatrust.astra.co.id",
       },
       {
-        title: "FDC Dental Clinic", img: "img/projects/fdc.png", desc: "(Android & iOS)",
+        title: "FDC Dental Clinic", img: "assets/img/projects/fdc.png", desc: "(Android & iOS)",
       },
       {
-        title: "Rumah Siap Kerja", img: "img/projects/rsk.png", desc: "(Android & iOS)",
+        title: "Rumah Siap Kerja", img: "assets/img/projects/rsk.png", desc: "(Android & iOS)",
       },
       {
-        title: "MSL (Mitra Solusi Lelang)", img: "img/projects/msl.png", link: "https://mslelang.co.id/", linkShow: "www.mslelang.co.id",
+        title: "MSL (Mitra Solusi Lelang)", img: "assets/img/projects/msl.png", link: "https://mslelang.co.id/", linkShow: "www.mslelang.co.id",
       },
       // {
-      //   title: "Bapenda Jakarta", img: "img/projects/bapenda.png", link: "https://pajakonline.jakarta.go.id/", linkShow: "pajakonline.jakarta.go.id",
+      //   title: "Bapenda Jakarta", img: "assets/img/projects/bapenda.png", link: "https://pajakonline.jakarta.go.id/", linkShow: "pajakonline.jakarta.go.id",
       // },
       {
-        title: "TOMAZZ", img: "img/projects/tomazz.png", link: "https://tomazz.co.id/", linkShow: "www.tomazz.co.id",
+        title: "TOMAZZ", img: "assets/img/projects/tomazz.png", link: "https://tomazz.co.id/", linkShow: "www.tomazz.co.id",
       },
       {
-        title: "Marlin Booking", img: "img/projects/marlin2.png", desc: "(Android & iOS)",
+        title: "Marlin Booking", img: "assets/img/projects/marlin2.png", desc: "(Android & iOS)",
       },
     ];
 
@@ -311,24 +319,24 @@
 
     // Skills
     const skills = [
-      "img/logos/react-native.png",
-      "img/logos/expo.png",
-      "img/logos/react-js.jpg",
-      "img/logos/next-js.png",
-      "img/logos/javscript.png",
-      "img/logos/typescript.jpg",
-      "img/logos/xcode.png",
-      "img/logos/android-studio.jpeg",
-      "img/logos/Google-Play-Console.png",
-      "img/logos/tailwind.jpg",
-      "img/logos/sentry.png",
-      "img/logos/GraphQL.png",
-      "img/logos/firebase.jpeg",
-      "img/logos/supabase.png",
-      "img/logos/vite.jpg",
-      "img/logos/vercel.png",
-      "img/logos/jira.png",
-      "img/logos/figma.png",
+      "assets/img/logos/react-native.png",
+      "assets/img/logos/expo.png",
+      "assets/img/logos/react-js.jpg",
+      "assets/img/logos/next-js.png",
+      "assets/img/logos/javscript.png",
+      "assets/img/logos/typescript.jpg",
+      "assets/img/logos/xcode.png",
+      "assets/img/logos/android-studio.jpeg",
+      "assets/img/logos/Google-Play-Console.png",
+      "assets/img/logos/tailwind.jpg",
+      "assets/img/logos/sentry.png",
+      "assets/img/logos/GraphQL.png",
+      "assets/img/logos/firebase.jpeg",
+      "assets/img/logos/supabase.png",
+      "assets/img/logos/vite.jpg",
+      "assets/img/logos/vercel.png",
+      "assets/img/logos/jira.png",
+      "assets/img/logos/figma.png",
     ];
 
     const skillsContainer = document.getElementById("skills-list");
@@ -344,25 +352,32 @@
       { icon: "fas fa-map-marked-alt", title: "Address", value: `<a href="https://maps.app.goo.gl/1UWMcC7kJFdBnnx47" target="_blank">Purworejo, Indonesia</a>` },
       { icon: "fas fa-envelope", title: "Email", value: `<a href="mailto:vd.onotrak@gmail.com">vd.onotrak@gmail.com</a>` },
       { icon: "fas fa-mobile-alt", title: "Phone", value: `<a href="https://wa.me/6285729249397" target="_blank">+62 857-2924-9397</a>` },
-      { icon: "fab fa-linkedin", title: "LinkedIn", value: `<a href="https://www.linkedin.com/in/onotrak/" target="_blank">linkedin.com/in/onotrak</a>` },
+      { icon: "fab fa-google-play", title: "Play Console", value: `<a href="https://play.google.com/store/apps/dev?id=7843769219552749469" target="_blank">Google Play Console</a>` },
       { icon: "fab fa-gitlab", title: "GitLab", value: `<a href="https://gitlab.com/onotrak" target="_blank">gitlab.com/onotrak</a>` },
       { icon: "fab fa-github", title: "GitHub", value: `<a href="https://github.com/onotrak" target="_blank">github.com/onotrak</a>` },
-      // { icon: "fab fa-instagram", title: "Instagram", value: `<a href="https://www.instagram.com/onotrak/" target="_blank">@onotrak</a>` },
+      { icon: "fab fa-linkedin", title: "LinkedIn", value: `<a href="https://www.linkedin.com/in/onotrak/" target="_blank">linkedin.com/in/onotrak</a>` },
+      { icon: "fab fa-instagram", title: "Instagram", value: `<a href="https://www.instagram.com/onotrak/" target="_blank">@onotrak</a>` },
+      { icon: "fab fa-facebook", title: "Facebook", value: `<a href="https://www.facebook.com/VDonotrak/" target="_blank">Pandy onotrak VD</a>` },
     ];
 
     const contactContainer = document.getElementById("contact-list");
-    contacts.map(c => {
+    contactContainer.classList.add("row", "justify-content-center");
+    contacts.forEach((c, i) => {
       const col = document.createElement("div");
-      col.className = "col-md-4 mb-3";
+      const isLastOdd = contacts.length % 3 === 1 && i === contacts.length - 1;
+      col.className = isLastOdd
+        ? "col-md-4 d-flex justify-content-center mb-3"
+        : "col-md-4 mb-3";
+
       col.innerHTML = `
-          <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="${c.icon} text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">${c.title}</h4>
-                <hr class="my-4" />
-                <div class="small text-black-50">${c.value}</div>
-              </div>
-          </div>`;
+        <div class="card py-4 h-100 w-100">
+            <div class="card-body text-center">
+              <i class="${c.icon} text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">${c.title}</h4>
+              <hr class="my-4" />
+              <div class="small text-black-50">${c.value}</div>
+            </div>
+        </div>`;
       contactContainer.appendChild(col);
     });
   </script>
