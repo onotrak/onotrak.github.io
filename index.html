@@ -239,12 +239,12 @@
   <script>
     // Work History
     const workHistory = [
-      { company: "Kode Inovasi Teknologi", role: "Front-End Engineer", date: "Apr 2024 - Sep 2025", img: "assets/img/projects/codr.jpeg" },
+      { company: "Kode Inovasi Teknologi", role: "Frontend Engineer", date: "Apr 2024 - Sep 2025", img: "assets/img/projects/codr.jpeg" },
       { company: "PT Bank BTPN Tbk", role: "React Native Developer", date: "Jul 2023 - Jan 2024", img: "assets/img/projects/btpn.jpg" },
       { company: "Codemasters", role: "Mentor / Trainer / Bootcamp Instructor", date: "May 2023 - Nov 2023", img: "assets/img/projects/codemasters.png" },
-      { company: "Kode Inovasi Teknologi", role: "Front-End Engineer", date: "Jan 2022 - May 2023", img: "assets/img/projects/codr.jpeg" },
-      { company: "Erloom Digital Venture", role: "Front-End Developer", date: "Feb 2021 - May 2023", img: "assets/img/projects/erloom.jpeg" },
-      { company: "Eidara Matadata Presisi", role: "Front-End Engineer", date: "May 2020 - Aug 2021", img: "assets/img/projects/eidara.jpeg" },
+      { company: "Kode Inovasi Teknologi", role: "Frontend Engineer", date: "Jan 2022 - May 2023", img: "assets/img/projects/codr.jpeg" },
+      { company: "Erloom Digital Venture", role: "Frontend Developer", date: "Feb 2021 - May 2023", img: "assets/img/projects/erloom.jpeg" },
+      { company: "Eidara Matadata Presisi", role: "Frontend Engineer", date: "May 2020 - Aug 2021", img: "assets/img/projects/eidara.jpeg" },
       { company: "Marlin Booking", role: "Frelance Mobile Developer", date: "Jun 2020 - Dec 2020", img: "assets/img/projects/marlin.jpg" },
       { company: "Erloom Digital Venture", role: "Frelance Mobile Developer", date: "May 2020 - Sep 2020", img: "assets/img/projects/erloom.jpeg" },
       { company: "Marlin Booking", role: "Mobile Engineer", date: "Nov 2018 - Apr 2020", img: "assets/img/projects/marlin.jpg" },
@@ -255,9 +255,12 @@
       const li = document.createElement("li");
       li.className = idx % 2 === 0 ? "timeline-inverted" : "";
       li.innerHTML = `
-          <div class="timeline-image">
-              <img class="rounded-circle img-fluid" src="${job.img}" alt="">
+          <div class="timeline-image bg-white d-flex align-items-center justify-content-center border">
+            <div class="rounded-circle overflow-hidden bg-white p-2" style="width: 100%; height: 100%;">
+              <img class="img-fluid" src="${job.img}" alt="" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
           </div>
+
           <div class="timeline-panel mt-lg-4">
               <div class="timeline-heading">
                 <h4 class="subheading">${job.company}</h4>
